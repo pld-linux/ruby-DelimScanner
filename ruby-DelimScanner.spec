@@ -11,7 +11,7 @@ Source0:	http://dev.faeriemud.org/~deveiant/RecDescentParser/lib/DelimScanner.rb
 # NoSource0-md5:	0b117164a34732e950713b60bc4a722e
 URL:	http://dev.faeriemud.org/~deveiant/RecDescentParser/lib/DelimScanner.rb
 BuildRequires:	ruby
-BuildArch:	noarch
+#BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
