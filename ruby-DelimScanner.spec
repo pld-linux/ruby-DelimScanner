@@ -1,6 +1,7 @@
 %define	ruby_rubylibdir	%(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
 %define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
-Summary:	a loose Ruby port of Text::Balanced
+Summary:	A loose Ruby port of Text::Balanced
+Summary(pl):	Swobodny port Text::Balanced dla jêzyka Ruby
 Name:		ruby-DelimScanner
 Version:	1.2
 Release:	1
@@ -14,9 +15,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A derivative of StringScanner that can scan for delimited constructs in
-addition to regular expressions. It is a loose port of the Text::Balanced
-module for Perl by Damian Conway.
+A derivative of StringScanner that can scan for delimited constructs
+in addition to regular expressions. It is a loose port of the
+Text::Balanced module for Perl by Damian Conway.
+
+%description -l pl
+Pochodna StringScannera potrafi±ca wyszukiwaæ ograniczone konstrukcje
+oprócz wyra¿eñ regularnych. Jest to swobodny port modu³u Perla
+Text::Balanced Damiana Conwaya.
 
 %prep
 %setup -c -T
