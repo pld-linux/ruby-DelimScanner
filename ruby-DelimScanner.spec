@@ -4,7 +4,7 @@ Summary:	A loose Ruby port of Text::Balanced
 Summary(pl):	Swobodny port Text::Balanced dla jêzyka Ruby
 Name:		ruby-DelimScanner
 Version:	1.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Libraries
 Source0:	http://dev.faeriemud.org/~deveiant/RecDescentParser/lib/DelimScanner.rb?dl=1
