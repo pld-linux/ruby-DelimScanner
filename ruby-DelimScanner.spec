@@ -36,7 +36,7 @@ rdoc --ri -o ri DelimScanner.rb
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{ruby_rubylibdir},%{ruby_ridir}}
 
-install -m 644 %{SOURCE0} $RPM_BUILD_ROOT%{ruby_rubylibdir}/DelimScanner.rb
+install %{SOURCE0} $RPM_BUILD_ROOT%{ruby_rubylibdir}/DelimScanner.rb
 
 cp -a ri/ri/* $RPM_BUILD_ROOT%{ruby_ridir}
 
