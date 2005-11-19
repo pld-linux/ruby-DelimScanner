@@ -1,5 +1,3 @@
-%define	ruby_rubylibdir	%(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
-%define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
 Summary:	A loose Ruby port of Text::Balanced
 Summary(pl):	Swobodny port Text::Balanced dla jêzyka Ruby
 Name:		ruby-DelimScanner
@@ -9,7 +7,9 @@ License:	GPL
 Group:		Development/Libraries
 Source0:	http://dev.faeriemud.org/~deveiant/RecDescentParser/lib/DelimScanner.rb?dl=1
 # NoSource0-md5:	0b117164a34732e950713b60bc4a722e
-URL:	http://dev.faeriemud.org/~deveiant/RecDescentParser/lib/DelimScanner.rb
+NoSource:	0
+URL:		http://dev.faeriemud.org/~deveiant/RecDescentParser/lib/DelimScanner.rb
+BuildRequires:	rpmbuild(macros) >= 1.263
 BuildRequires:	ruby
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -25,10 +25,10 @@ oprócz wyra¿eñ regularnych. Jest to swobodny port modu³u Perla
 Text::Balanced Damiana Conwaya.
 
 %prep
-%setup -c -T
+%setup -q -cT
+cp %{SOURCE0} DelimScanner.rb
 
 %build
-cp %{SOURCE0} DelimScanner.rb
 rdoc -o rdoc DelimScanner.rb
 rdoc --ri -o ri DelimScanner.rb
 
