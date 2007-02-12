@@ -1,5 +1,5 @@
 Summary:	A loose Ruby port of Text::Balanced
-Summary(pl):	Swobodny port Text::Balanced dla jêzyka Ruby
+Summary(pl.UTF-8):   Swobodny port Text::Balanced dla jÄ™zyka Ruby
 Name:		ruby-DelimScanner
 Version:	1.2
 Release:	2
@@ -20,9 +20,9 @@ A derivative of StringScanner that can scan for delimited constructs
 in addition to regular expressions. It is a loose port of the
 Text::Balanced module for Perl by Damian Conway.
 
-%description -l pl
-Pochodna StringScannera potrafi±ca wyszukiwaæ ograniczone konstrukcje
-oprócz wyra¿eñ regularnych. Jest to swobodny port modu³u Perla
+%description -l pl.UTF-8
+Pochodna StringScannera potrafiÄ…ca wyszukiwaÄ‡ ograniczone konstrukcje
+oprÃ³cz wyraÅ¼eÅ„ regularnych. Jest to swobodny port moduÅ‚u Perla
 Text::Balanced Damiana Conwaya.
 
 %prep
