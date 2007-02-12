@@ -1,5 +1,5 @@
 Summary:	A loose Ruby port of Text::Balanced
-Summary(pl.UTF-8):   Swobodny port Text::Balanced dla języka Ruby
+Summary(pl.UTF-8):	Swobodny port Text::Balanced dla języka Ruby
 Name:		ruby-DelimScanner
 Version:	1.2
 Release:	2
