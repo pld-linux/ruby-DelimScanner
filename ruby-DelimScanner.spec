@@ -39,7 +39,7 @@ install -d $RPM_BUILD_ROOT{%{ruby_rubylibdir},%{ruby_ridir}}
 
 install %{SOURCE0} $RPM_BUILD_ROOT%{ruby_rubylibdir}/DelimScanner.rb
 
-cp -a ri/ri/* $RPM_BUILD_ROOT%{ruby_ridir}
+cp -a ri/* $RPM_BUILD_ROOT%{ruby_ridir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
